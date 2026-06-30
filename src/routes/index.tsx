@@ -68,13 +68,13 @@ function Index() {
         />
 
         {/* Embedded site */}
-        <section className="mx-auto max-w-6xl px-4 py-8">
+        <section className="mx-auto w-full max-w-6xl px-4 py-8">
           <div className="overflow-hidden rounded-lg border border-border bg-muted">
-            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+            <div className="embed-wrapper relative w-full">
               <iframe
                 src={EMBED_URL}
                 title="Embedded site"
-                className="absolute inset-0 h-full w-full"
+                className="absolute inset-0 h-full w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer"
               />
