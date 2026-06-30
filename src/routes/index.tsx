@@ -10,6 +10,7 @@ import brandCannassure from "@/assets/brands/f0eff-cannasure.jpg.asset.json";
 import brandBetter from "@/assets/brands/91995-better.jpg.asset.json";
 import brandImc from "@/assets/brands/69144-imc.jpg.asset.json";
 import brandTogether from "@/assets/brands/449c4-together.jpg.asset.json";
+import heroAsset from "@/assets/hero.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
