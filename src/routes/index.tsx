@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import logoAsset from "@/assets/logo.png.asset.json";
 import brandCannabisPharm from "@/assets/brands/88dcc-canabis-pharm-israel.jpg.asset.json";
 import brandBazelet from "@/assets/brands/424a2-bazelet.jpg.asset.json";
@@ -150,8 +150,12 @@ function Index() {
       </main>
 
       <footer className="border-t border-border">
-        <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Ultra Farm
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-6 text-sm text-muted-foreground">
+          <span>© {new Date().getFullYear()} Ultra Farm</span>
+          <div className="flex gap-4">
+            <Link to="/terms" className="hover:text-foreground hover:underline underline-offset-4">תקנון האתר</Link>
+            <Link to="/accessibility" className="hover:text-foreground hover:underline underline-offset-4">הסכם נגישות</Link>
+          </div>
         </div>
       </footer>
     </div>
