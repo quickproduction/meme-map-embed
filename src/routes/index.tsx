@@ -41,8 +41,7 @@ const BRANDS = [
   { name: "Together", src: brandTogether.url },
 ];
 const MAP_EMBED =
-  "https://www.google.com/maps?q=Times+Square,New+York,NY&output=embed";
-const MEME_IMAGE = "https://placehold.co/600x600?text=Meme";
+  "https://www.google.com/maps?q=Avshalom+Dinovich+21,+Petah+Tikva,+Israel&output=embed";
 
 function Index() {
   return (
