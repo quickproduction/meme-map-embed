@@ -125,7 +125,7 @@ function Index() {
 
       <footer className="border-t border-border">
         <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-muted-foreground">
-          © {new Date().getFullYear()} {LOGO_TEXT}
+          © {new Date().getFullYear()} Ultra Farm
         </div>
       </footer>
     </div>
