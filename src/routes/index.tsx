@@ -81,16 +81,6 @@ function Index() {
               />
             </div>
           </div>
-          <div className="mt-3 text-sm">
-            <a
-              href={EMBED_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary underline underline-offset-4 hover:opacity-80"
-            >
-              Open site in a new tab →
-            </a>
-          </div>
         </section>
 
         {/* Logos roller */}
