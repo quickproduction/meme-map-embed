@@ -70,11 +70,12 @@ function Index() {
         {/* Embedded site */}
         <section className="w-full py-4 sm:mx-auto sm:max-w-6xl sm:px-4 sm:py-8">
           <div className="overflow-hidden bg-muted sm:rounded-lg sm:border sm:border-border">
-            <div className="embed-wrapper relative w-full">
+            <div className="embed-wrapper relative w-full overflow-hidden">
               <iframe
                 src={EMBED_URL}
                 title="Embedded site"
-                className="absolute inset-0 h-full w-full border-0"
+                className="absolute left-0 w-full border-0"
+                style={{ top: "-120px", height: "calc(100% + 120px)" }}
                 loading="lazy"
                 referrerPolicy="no-referrer"
               />
