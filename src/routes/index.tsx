@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
 });
 
 // TODO: replace with your real values
-const EMBED_URL = "https://jane.co.il/embed/store/ultra-pharm/menu";
+const EMBED_URL = "https://ultra-pharm.jane.co.il/";
 
 const BRANDS = [
   { name: "Cannabis Pharm Israel", src: brandCannabisPharm.url },
