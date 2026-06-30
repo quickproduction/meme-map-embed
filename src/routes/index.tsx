@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Site" },
-      { name: "description", content: "Embedded site with logo roller, location map, and accessibility info." },
-      { property: "og:title", content: "Site" },
-      { property: "og:description", content: "Embedded site with logo roller, location map, and accessibility info." },
+      { title: "Ultra Farm" },
+      { name: "description", content: "Ultra Farm — embedded site with logo roller, location, and accessibility info." },
+      { property: "og:title", content: "Ultra Farm" },
+      { property: "og:description", content: "Ultra Farm — embedded site with logo roller, location, and accessibility info." },
     ],
   }),
   component: Index,
@@ -15,7 +16,7 @@ export const Route = createFileRoute("/")({
 // TODO: replace with your real values
 const EMBED_URL = "https://example.com";
 const EMBED_LINK = "https://example.com";
-const LOGO_TEXT = "LOGO";
+
 const BRANDS = ["Acme", "Globex", "Initech", "Umbrella", "Soylent", "Wayne", "Stark", "Wonka"];
 const MAP_EMBED =
   "https://www.google.com/maps?q=Times+Square,New+York,NY&output=embed";
@@ -27,11 +28,12 @@ function Index() {
       {/* Header */}
       <header className="border-b border-border">
         <div className="mx-auto flex max-w-6xl items-center px-4 py-4">
-          <a href="/" className="text-2xl font-black tracking-tight" aria-label="Home">
-            {LOGO_TEXT}
+          <a href="/" aria-label="Ultra Farm — Home">
+            <img src={logoAsset.url} alt="Ultra Farm" className="h-14 w-auto" />
           </a>
         </div>
       </header>
+
 
       <main>
         {/* Embedded site */}
