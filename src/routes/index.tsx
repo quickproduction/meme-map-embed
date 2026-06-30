@@ -146,7 +146,7 @@ function Index() {
 
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-6 text-sm text-muted-foreground">
-          <span>© {new Date().getFullYear()} Ultra Farm</span>
+          <span>כל הזכויות שמורות ל-אולטרה פארם 2021 בע״מ</span>
           <div className="flex gap-4">
             <Link to="/terms" className="hover:text-foreground hover:underline underline-offset-4">תקנון האתר</Link>
             <Link to="/accessibility" className="hover:text-foreground hover:underline underline-offset-4">הסכם נגישות</Link>
