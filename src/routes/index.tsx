@@ -115,26 +115,30 @@ function Index() {
           </div>
         </section>
 
-        {/* Map + meme */}
-        <section className="mx-auto max-w-6xl px-4 py-12">
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="overflow-hidden rounded-lg border border-border">
+        {/* Map */}
+        <section
+          className="w-full py-16"
+          style={{
+            background: "linear-gradient(135deg, #3EC7B3 0%, #2A9D8F 100%)",
+          }}
+        >
+          <div className="mx-auto flex max-w-6xl flex-col items-center px-4 text-center">
+            <div
+              className="overflow-hidden rounded-full border-4 border-white/30 shadow-2xl"
+              style={{ width: "280px", height: "280px" }}
+            >
               <iframe
                 src={MAP_EMBED}
                 title="Location map"
-                className="h-80 w-full md:h-full"
+                className="h-full w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-            <div className="overflow-hidden rounded-lg border border-border bg-muted">
-              <img
-                src={MEME_IMAGE}
-                alt="Location meme"
-                className="h-full w-full object-cover"
-                loading="lazy"
-              />
-            </div>
+            <h2 className="mt-8 text-2xl font-bold text-white">כתובתינו</h2>
+            <p className="mt-2 text-lg text-white/90">
+              אבשלום דינוביץ 21 - פתח-תקווה
+            </p>
           </div>
         </section>
 
