@@ -3,9 +3,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "תקנון האתר — Ultra Farm" },
-      { name: "description", content: "תקנון האתר ותנאי השימוש של Ultra Farm" },
-      { property: "og:title", content: "תקנון האתר — Ultra Farm" },
+      { title: "תקנון האתר — Ultra Pharm 2021 LTD" },
+      { name: "description", content: "תקנון האתר ותנאי השימוש של Ultra Pharm 2021 LTD" },
+      { property: "og:title", content: "תקנון האתר — Ultra Pharm 2021 LTD" },
       { property: "og:type", content: "website" },
     ],
     links: [
@@ -20,8 +20,8 @@ function TermsPage() {
     <div className="min-h-dvh bg-background text-foreground" dir="rtl">
       <header className="border-b border-border">
         <div className="mx-auto flex max-w-6xl items-center justify-center px-4 py-4">
-          <Link to="/" aria-label="Ultra Farm — Home">
-            <span className="text-xl font-bold">Ultra Farm</span>
+          <Link to="/" aria-label="Ultra Pharm 2021 LTD — Home">
+            <span className="text-xl font-bold">Ultra Pharm 2021 LTD</span>
           </Link>
         </div>
       </header>
@@ -171,7 +171,7 @@ function TermsPage() {
         <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-muted-foreground">
           <Link to="/" className="text-primary underline underline-offset-4">חזרה לעמוד הראשי</Link>
           <span className="mx-2">|</span>
-          <span>© {new Date().getFullYear()} Ultra Farm</span>
+          <span>© {new Date().getFullYear()} Ultra Pharm 2021 LTD</span>
         </div>
       </footer>
     </div>

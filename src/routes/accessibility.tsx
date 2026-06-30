@@ -3,9 +3,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/accessibility")({
   head: () => ({
     meta: [
-      { title: "הסכם נגישות — Ultra Farm" },
-      { name: "description", content: "הסכם נגישות של אתר Ultra Farm" },
-      { property: "og:title", content: "הסכם נגישות — Ultra Farm" },
+      { title: "הסכם נגישות — Ultra Pharm 2021 LTD" },
+      { name: "description", content: "הסכם נגישות של אתר Ultra Pharm 2021 LTD" },
+      { property: "og:title", content: "הסכם נגישות — Ultra Pharm 2021 LTD" },
       { property: "og:type", content: "website" },
     ],
     links: [
@@ -20,8 +20,8 @@ function AccessibilityPage() {
     <div className="min-h-dvh bg-background text-foreground" dir="rtl">
       <header className="border-b border-border">
         <div className="mx-auto flex max-w-6xl items-center justify-center px-4 py-4">
-          <Link to="/" aria-label="Ultra Farm — Home">
-            <span className="text-xl font-bold">Ultra Farm</span>
+          <Link to="/" aria-label="Ultra Pharm 2021 LTD — Home">
+            <span className="text-xl font-bold">Ultra Pharm 2021 LTD</span>
           </Link>
         </div>
       </header>
@@ -31,7 +31,7 @@ function AccessibilityPage() {
 
         <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
           <p>
-            אתר <strong>Ultra Farm (ultrapharm.co.il)</strong> רואה חשיבות עליונה במתן שירות שוויוני ונגיש לכלל הציבור, לרבות אנשים עם מוגבלות. אנו פועלים להנגיש את האתר בהתאם לתקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע"ג-2013, ובהתאם להנחיות תקן ישראלי 5568 ברמה AA (WCAG 2.1).
+            אתר <strong>Ultra Pharm 2021 LTD (ultrapharm.co.il)</strong> רואה חשיבות עליונה במתן שירות שוויוני ונגיש לכלל הציבור, לרבות אנשים עם מוגבלות. אנו פועלים להנגיש את האתר בהתאם לתקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע"ג-2013, ובהתאם להנחיות תקן ישראלי 5568 ברמה AA (WCAG 2.1).
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-8">התאמות נגישות שבוצעו באתר</h2>
@@ -104,7 +104,7 @@ function AccessibilityPage() {
         <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-muted-foreground">
           <Link to="/" className="text-primary underline underline-offset-4">חזרה לעמוד הראשי</Link>
           <span className="mx-2">|</span>
-          <span>© {new Date().getFullYear()} Ultra Farm</span>
+          <span>© {new Date().getFullYear()} Ultra Pharm 2021 LTD</span>
         </div>
       </footer>
     </div>
