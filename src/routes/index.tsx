@@ -68,8 +68,8 @@ function Index() {
         />
 
         {/* Embedded site */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-8">
-          <div className="overflow-hidden rounded-lg border border-border bg-muted">
+        <section className="w-full py-4 sm:mx-auto sm:max-w-6xl sm:px-4 sm:py-8">
+          <div className="overflow-hidden bg-muted sm:rounded-lg sm:border sm:border-border">
             <div className="embed-wrapper relative w-full">
               <iframe
                 src={EMBED_URL}
