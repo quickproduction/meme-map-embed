@@ -1,5 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logoAsset from "@/assets/logo.png.asset.json";
+import brandCannabisPharm from "@/assets/brands/88dcc-canabis-pharm-israel.jpg.asset.json";
+import brandBazelet from "@/assets/brands/424a2-bazelet.jpg.asset.json";
+import brandTrichome from "@/assets/brands/8e8c0-thrichome.jpg.asset.json";
+import brandTelecann from "@/assets/brands/0b6d0-telecan.jpg.asset.json";
+import brandMedicannx from "@/assets/brands/91cb7-medicannx.jpg.asset.json";
+import brandCanya from "@/assets/brands/d1c65-canya.jpg.asset.json";
+import brandCannassure from "@/assets/brands/f0eff-cannasure.jpg.asset.json";
+import brandBetter from "@/assets/brands/91995-better.jpg.asset.json";
+import brandImc from "@/assets/brands/69144-imc.jpg.asset.json";
+import brandTogether from "@/assets/brands/449c4-together.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -17,7 +27,18 @@ export const Route = createFileRoute("/")({
 const EMBED_URL = "https://example.com";
 const EMBED_LINK = "https://example.com";
 
-const BRANDS = ["Acme", "Globex", "Initech", "Umbrella", "Soylent", "Wayne", "Stark", "Wonka"];
+const BRANDS = [
+  { name: "Cannabis Pharm Israel", src: brandCannabisPharm.url },
+  { name: "Bazelet Group", src: brandBazelet.url },
+  { name: "Trichome", src: brandTrichome.url },
+  { name: "TeleCann", src: brandTelecann.url },
+  { name: "MedicannX", src: brandMedicannx.url },
+  { name: "Canya Pharmaceutical", src: brandCanya.url },
+  { name: "Cannassure", src: brandCannassure.url },
+  { name: "Better", src: brandBetter.url },
+  { name: "IMC", src: brandImc.url },
+  { name: "Together", src: brandTogether.url },
+];
 const MAP_EMBED =
   "https://www.google.com/maps?q=Times+Square,New+York,NY&output=embed";
 const MEME_IMAGE = "https://placehold.co/600x600?text=Meme";
@@ -68,10 +89,15 @@ function Index() {
               {[...BRANDS, ...BRANDS].map((b, i) => (
                 <div
                   key={i}
-                  className="flex h-12 items-center text-xl font-semibold text-muted-foreground"
+                  className="flex h-16 items-center"
                   aria-hidden={i >= BRANDS.length}
                 >
-                  {b}
+                  <img
+                    src={b.src}
+                    alt={b.name}
+                    className="h-16 w-auto object-contain"
+                    loading="lazy"
+                  />
                 </div>
               ))}
             </div>
