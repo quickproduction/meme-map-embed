@@ -26,7 +26,6 @@ export const Route = createFileRoute("/")({
 
 // TODO: replace with your real values
 const EMBED_URL = "https://ultra-pharm.allpharm.co.il/app/mobile/products-sale/orderOpen";
-const EMBED_LINK = "https://ultra-pharm.allpharm.co.il/app/mobile/products-sale/orderOpen";
 
 const BRANDS = [
   { name: "Cannabis Pharm Israel", src: brandCannabisPharm.url },
@@ -80,16 +79,6 @@ function Index() {
                 referrerPolicy="no-referrer"
               />
             </div>
-          </div>
-          <div className="mt-3 text-sm">
-            <a
-              href={EMBED_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary underline underline-offset-4 hover:opacity-80"
-            >
-              Open site in a new tab →
-            </a>
           </div>
         </section>
 
