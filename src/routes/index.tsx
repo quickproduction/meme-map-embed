@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
 });
 
 // TODO: replace with your real values
-const EMBED_URL = "https://jane.co.il/store/ultra-pharm/";
+const EMBED_URL = "https://jane.co.il/embed/store/ultra-pharm/menu";
 
 const BRANDS = [
   { name: "Cannabis Pharm Israel", src: brandCannabisPharm.url },
@@ -70,12 +70,11 @@ function Index() {
         {/* Embedded site */}
         <section className="w-full py-4 sm:mx-auto sm:max-w-6xl sm:px-4 sm:py-8">
           <div className="overflow-hidden bg-muted sm:rounded-lg sm:border sm:border-border">
-            <div className="embed-wrapper relative w-full overflow-hidden">
+            <div className="embed-wrapper relative w-full">
               <iframe
                 src={EMBED_URL}
                 title="Embedded site"
-                className="absolute left-0 w-full border-0"
-                style={{ top: "-120px", height: "calc(100% + 120px)" }}
+                className="absolute inset-0 h-full w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer"
               />
