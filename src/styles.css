@@ -156,3 +156,13 @@
   to { transform: translateX(-50%); }
 }
 
+.embed-wrapper {
+  padding-top: 130%;
+}
+
+@media (min-width: 640px) {
+  .embed-wrapper {
+    padding-top: 56.25%;
+  }
+}
+
