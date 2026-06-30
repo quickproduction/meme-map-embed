@@ -142,26 +142,6 @@ function Index() {
           </div>
         </section>
 
-        {/* Accessibility */}
-        <section className="border-t border-border bg-muted/40" aria-labelledby="a11y-heading">
-          <div className="mx-auto max-w-6xl px-4 py-12">
-            <h2 id="a11y-heading" className="text-2xl font-bold">
-              Accessibility
-            </h2>
-            <p className="mt-3 max-w-2xl text-muted-foreground">
-              We're committed to making this site accessible to everyone. We aim to
-              conform with WCAG 2.1 Level AA. If you encounter any barriers or need
-              assistance, contact us at{" "}
-              <a
-                className="text-primary underline underline-offset-4"
-                href="mailto:accessibility@example.com"
-              >
-                accessibility@example.com
-              </a>
-              .
-            </p>
-          </div>
-        </section>
       </main>
 
       <footer className="border-t border-border">
