@@ -16,10 +16,10 @@ import heroAsset from "@/assets/hero.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ultra Farm" },
-      { name: "description", content: "Ultra Farm — embedded site with logo roller, location, and accessibility info." },
-      { property: "og:title", content: "Ultra Farm" },
-      { property: "og:description", content: "Ultra Farm — embedded site with logo roller, location, and accessibility info." },
+      { title: "Ultra Pharm" },
+      { name: "description", content: "Ultra Pharm — אתר אולטרה פארם" },
+      { property: "og:title", content: "Ultra Pharm" },
+      { property: "og:description", content: "Ultra Pharm — אתר אולטרה פארם" },
     ],
   }),
   component: Index,
