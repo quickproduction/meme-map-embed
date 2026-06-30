@@ -157,12 +157,14 @@
 }
 
 .embed-wrapper {
-  padding-top: 130%;
+  height: min(1200px, 145dvh);
+  min-height: 760px;
 }
 
 @media (min-width: 640px) {
   .embed-wrapper {
-    padding-top: 56.25%;
+    height: 820px;
+    min-height: 820px;
   }
 }
 
