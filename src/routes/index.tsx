@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { MessageCircle, Accessibility } from "lucide-react";
 import logoAsset from "@/assets/logo.png.asset.json";
 import brandCannabisPharm from "@/assets/brands/88dcc-canabis-pharm-israel.jpg.asset.json";
 import brandBazelet from "@/assets/brands/424a2-bazelet.jpg.asset.json";
@@ -142,6 +143,27 @@ function Index() {
           </div>
         </div>
       </footer>
+
+
+      {/* Floating action buttons */}
+      <div className="fixed bottom-5 left-5 z-50 flex flex-col gap-3">
+        <a
+          href="https://wa.me/972533486664"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="צור קשר בוואטסאפ"
+          className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110"
+        >
+          <MessageCircle size={28} fill="currentColor" />
+        </a>
+        <Link
+          to="/accessibility"
+          aria-label="הצהרת נגישות"
+          className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-transform hover:scale-110"
+        >
+          <Accessibility size={28} />
+        </Link>
+      </div>
     </div>
   );
 }
