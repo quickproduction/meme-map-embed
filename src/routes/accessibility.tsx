@@ -3,14 +3,22 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/accessibility")({
   head: () => ({
     meta: [
-      { title: "הסכם נגישות — Ultra Pharm 2021 LTD" },
-      { name: "description", content: "הסכם נגישות של אתר Ultra Pharm 2021 LTD" },
-      { property: "og:title", content: "הסכם נגישות — Ultra Pharm 2021 LTD" },
+      { title: "הצהרת נגישות — אולטרה פארם" },
+      {
+        name: "description",
+        content:
+          "הצהרת הנגישות של אתר אולטרה פארם — התאמות נגישות שבוצעו, אפשרויות בתפריט הנגישות ודרכי פנייה לממונה הנגישות, בהתאם לתקן ישראלי 5568 (WCAG 2.1 AA).",
+      },
+      { property: "og:title", content: "הצהרת נגישות — אולטרה פארם" },
+      {
+        property: "og:description",
+        content:
+          "הצהרת הנגישות של אתר אולטרה פארם, התאמות שבוצעו ודרכי פנייה לממונה הנגישות.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://ultrapharm.co.il/accessibility" },
     ],
-    links: [
-      { rel: "canonical", href: "https://meme-map-embed.lovable.app/accessibility" },
-    ],
+    links: [{ rel: "canonical", href: "https://ultrapharm.co.il/accessibility" }],
   }),
   component: AccessibilityPage,
 });

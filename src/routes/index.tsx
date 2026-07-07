@@ -16,10 +16,41 @@ import heroAsset from "@/assets/hero.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ultra Pharm" },
-      { name: "description", content: "Ultra Pharm — אתר אולטרה פארם" },
-      { property: "og:title", content: "Ultra Pharm" },
-      { property: "og:description", content: "Ultra Pharm — אתר אולטרה פארם" },
+      { title: "אולטרה פארם — בית מרקחת לקנאביס רפואי | פתח תקווה" },
+      {
+        name: "description",
+        content:
+          "אולטרה פארם בפתח תקווה — בית מרקחת לקנאביס רפואי עם מגוון מותגי פרימיום (IMC, בזלת, Together, Better ועוד). בדקו זמינות מלאי והזמינו בקלות מטופלים עם רישיון.",
+      },
+      { property: "og:title", content: "אולטרה פארם — בית מרקחת לקנאביס רפואי" },
+      {
+        property: "og:description",
+        content:
+          "בית מרקחת מוביל לקנאביס רפואי בפתח תקווה — מגוון מותגי פרימיום, מלאי מתעדכן ושירות אישי למטופלים עם רישיון.",
+      },
+      { property: "og:url", content: "https://ultrapharm.co.il/" },
+    ],
+    links: [{ rel: "canonical", href: "https://ultrapharm.co.il/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Pharmacy",
+          name: "אולטרה פארם",
+          alternateName: "Ultra Pharm 2021 LTD",
+          url: "https://ultrapharm.co.il/",
+          telephone: "+972-53-348-6664",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "אבשלום דינוביץ 21",
+            addressLocality: "פתח תקווה",
+            addressCountry: "IL",
+          },
+          areaServed: "IL",
+          medicalSpecialty: "Pharmacy",
+        }),
+      },
     ],
   }),
   component: Index,
@@ -67,6 +98,22 @@ function Index() {
           }}
           aria-label="Ultra Farm hero"
         />
+
+        {/* Intro / SEO copy */}
+        <section className="mx-auto max-w-4xl px-4 py-10 text-center" dir="rtl">
+          <h1 className="text-3xl font-bold sm:text-4xl">
+            אולטרה פארם — בית מרקחת לקנאביס רפואי בפתח תקווה
+          </h1>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            אולטרה פארם הוא בית מרקחת מוביל המתמחה בהנפקת קנאביס רפואי למטופלים
+            עם רישיון בישראל. אצלנו תמצאו מגוון רחב של מותגי פרימיום — בהם IMC,
+            בזלת (Bazelet), Together, Better, Trichome, Canya, Cannassure,
+            MedicannX ו-TeleCann — במלאי מתעדכן ובזמינות גבוהה. הצוות המקצועי
+            שלנו מלווה אתכם באופן אישי בבחירת הזן המתאים, ומספק שירות אמין,
+            דיסקרטי ומהיר בסניף שברחוב אבשלום דינוביץ 21, פתח תקווה.
+          </p>
+        </section>
+
 
         {/* Embedded site */}
         <section className="w-full py-4 sm:mx-auto sm:max-w-6xl sm:px-4 sm:py-8">

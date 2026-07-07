@@ -77,19 +77,41 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ultra Pharm" },
-      { name: "description", content: "Ultra Pharm — אתר אולטרה פארם" },
-      { name: "author", content: "Ultra Pharm" },
-      { property: "og:title", content: "Ultra Pharm" },
-      { property: "og:description", content: "Ultra Pharm — אתר אולטרה פארם" },
+      { title: "אולטרה פארם — בית מרקחת לקנאביס רפואי | פתח תקווה" },
+      {
+        name: "description",
+        content:
+          "אולטרה פארם — בית מרקחת מוביל לקנאביס רפואי בפתח תקווה. מגוון רחב של מותגי פרימיום (IMC, בזלת, Together ועוד), שירות מקצועי ואישי למטופלים עם רישיון.",
+      },
+      { name: "author", content: "Ultra Pharm 2021 LTD" },
+      { property: "og:site_name", content: "אולטרה פארם" },
+      { property: "og:title", content: "אולטרה פארם — בית מרקחת לקנאביס רפואי" },
+      {
+        property: "og:description",
+        content:
+          "בית מרקחת מוביל לקנאביס רפואי בפתח תקווה — מגוון מותגי פרימיום ושירות מקצועי למטופלים עם רישיון.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "he_IL" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@ultrapharm" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "אולטרה פארם",
+          alternateName: "Ultra Pharm 2021 LTD",
+          url: "https://ultrapharm.co.il",
+          logo: "https://ultrapharm.co.il/favicon.ico",
+        }),
       },
     ],
   }),
