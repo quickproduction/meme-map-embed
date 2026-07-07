@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { MessageCircle, Accessibility } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { AccessibilityWidget } from "@/components/AccessibilityWidget";
 import logoAsset from "@/assets/logo.png.asset.json";
 import brandCannabisPharm from "@/assets/brands/88dcc-canabis-pharm-israel.jpg.asset.json";
 import brandBazelet from "@/assets/brands/424a2-bazelet.jpg.asset.json";
