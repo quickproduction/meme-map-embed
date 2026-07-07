@@ -99,20 +99,6 @@ function Index() {
           aria-label="Ultra Farm hero"
         />
 
-        {/* Intro / SEO copy */}
-        <section className="mx-auto max-w-4xl px-4 py-10 text-center" dir="rtl">
-          <h1 className="text-3xl font-bold sm:text-4xl">
-            אולטרה פארם — בית מרקחת לקנאביס רפואי בפתח תקווה
-          </h1>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            אולטרה פארם הוא בית מרקחת מוביל המתמחה בהנפקת קנאביס רפואי למטופלים
-            עם רישיון בישראל. אצלנו תמצאו מגוון רחב של מותגי פרימיום — בהם IMC,
-            בזלת (Bazelet), Together, Better, Trichome, Canya, Cannassure,
-            MedicannX ו-TeleCann — במלאי מתעדכן ובזמינות גבוהה. הצוות המקצועי
-            שלנו מלווה אתכם באופן אישי בבחירת הזן המתאים, ומספק שירות אמין,
-            דיסקרטי ומהיר בסניף שברחוב אבשלום דינוביץ 21, פתח תקווה.
-          </p>
-        </section>
 
 
         {/* Embedded site */}
