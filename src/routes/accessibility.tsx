@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/accessibility")({
   head: () => ({
     meta: [
-      { title: "הצהרת נגישות — אולטרה פארם" },
+      { title: "אולטרה פארם - בית מרקחת" },
       {
         name: "description",
         content:
