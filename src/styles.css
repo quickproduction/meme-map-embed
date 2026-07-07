@@ -168,3 +168,35 @@
   }
 }
 
+/* Accessibility widget overrides */
+.a11y-high-contrast {
+  filter: contrast(1.4);
+}
+.a11y-high-contrast body {
+  background: #000 !important;
+  color: #fff !important;
+}
+.a11y-grayscale {
+  filter: grayscale(1);
+}
+.a11y-highlight-links a,
+.a11y-highlight-links button {
+  outline: 2px solid #ffeb3b !important;
+  outline-offset: 2px;
+  background-color: rgba(255, 235, 59, 0.15) !important;
+}
+.a11y-reduced-motion *,
+.a11y-reduced-motion *::before,
+.a11y-reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+.a11y-readable-font,
+.a11y-readable-font * {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  letter-spacing: 0.02em !important;
+}
+
+
