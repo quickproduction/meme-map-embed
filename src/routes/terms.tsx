@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "תקנון האתר ותנאי שימוש — אולטרה פארם" },
+      { title: "אולטרה פארם - בית מרקחת" },
       {
         name: "description",
         content:

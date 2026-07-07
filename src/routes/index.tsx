@@ -16,7 +16,7 @@ import heroAsset from "@/assets/hero.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "אולטרה פארם — בית מרקחת לקנאביס רפואי | פתח תקווה" },
+      { title: "אולטרה פארם - בית מרקחת" },
       {
         name: "description",
         content:
