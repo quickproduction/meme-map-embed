@@ -16,10 +16,41 @@ import heroAsset from "@/assets/hero.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ultra Pharm" },
-      { name: "description", content: "Ultra Pharm — אתר אולטרה פארם" },
-      { property: "og:title", content: "Ultra Pharm" },
-      { property: "og:description", content: "Ultra Pharm — אתר אולטרה פארם" },
+      { title: "אולטרה פארם — בית מרקחת לקנאביס רפואי | פתח תקווה" },
+      {
+        name: "description",
+        content:
+          "אולטרה פארם בפתח תקווה — בית מרקחת לקנאביס רפואי עם מגוון מותגי פרימיום (IMC, בזלת, Together, Better ועוד). בדקו זמינות מלאי והזמינו בקלות מטופלים עם רישיון.",
+      },
+      { property: "og:title", content: "אולטרה פארם — בית מרקחת לקנאביס רפואי" },
+      {
+        property: "og:description",
+        content:
+          "בית מרקחת מוביל לקנאביס רפואי בפתח תקווה — מגוון מותגי פרימיום, מלאי מתעדכן ושירות אישי למטופלים עם רישיון.",
+      },
+      { property: "og:url", content: "https://ultrapharm.co.il/" },
+    ],
+    links: [{ rel: "canonical", href: "https://ultrapharm.co.il/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Pharmacy",
+          name: "אולטרה פארם",
+          alternateName: "Ultra Pharm 2021 LTD",
+          url: "https://ultrapharm.co.il/",
+          telephone: "+972-53-348-6664",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "אבשלום דינוביץ 21",
+            addressLocality: "פתח תקווה",
+            addressCountry: "IL",
+          },
+          areaServed: "IL",
+          medicalSpecialty: "Pharmacy",
+        }),
+      },
     ],
   }),
   component: Index,
