@@ -3,14 +3,22 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "תקנון האתר — Ultra Pharm 2021 LTD" },
-      { name: "description", content: "תקנון האתר ותנאי השימוש של Ultra Pharm 2021 LTD" },
-      { property: "og:title", content: "תקנון האתר — Ultra Pharm 2021 LTD" },
+      { title: "תקנון האתר ותנאי שימוש — אולטרה פארם" },
+      {
+        name: "description",
+        content:
+          "תקנון האתר ותנאי השימוש של אולטרה פארם (ultrapharm.co.il) — כללי שימוש, הזמנות, משלוחים, הגבלת אחריות ומדיניות פרטיות עבור לקוחות בית המרקחת.",
+      },
+      { property: "og:title", content: "תקנון האתר — אולטרה פארם" },
+      {
+        property: "og:description",
+        content:
+          "תנאי השימוש והתקנון הרשמי של אתר אולטרה פארם — הזמנות, משלוחים, הגבלת אחריות ופרטיות.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://ultrapharm.co.il/terms" },
     ],
-    links: [
-      { rel: "canonical", href: "https://meme-map-embed.lovable.app/terms" },
-    ],
+    links: [{ rel: "canonical", href: "https://ultrapharm.co.il/terms" }],
   }),
   component: TermsPage,
 });
